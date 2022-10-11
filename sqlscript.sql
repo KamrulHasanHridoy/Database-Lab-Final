@@ -130,3 +130,20 @@ select Electric_Bill.amount, Electric_Bill.type from Electric_Bill right join Co
 
 select Electric_Bill.amount, Electric_Bill.type from Electric_Bill Full outer join Consumer on Electric_Bill.bill_id=consumer.bill_id;
 
+select E.amount, E.type from Electric_Bill E left join Consumer C on E.bill_id=C.bill_id;
+
+
+select
+    Employee_id,
+    name,
+    age
+FROM
+    Employees
+where
+   age = (
+        SELECT
+            MAX( age )
+        FROM
+            Employees
+    );
+
