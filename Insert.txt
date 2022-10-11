@@ -1,0 +1,32 @@
+insert into Admin values(1,'A','abcd@com','1234');
+
+insert into Admin values(2,'B','abce@com','1234');
+
+insert into Admin values(3,'C','abcf@com','1234');
+
+insert into Admin values(4,'D','abcg@com','1234');
+
+insert into Employees values(1,'Zihad','abcj@com','1234','013333','A+',27);
+
+insert into Employees values(2,'Hossain','abck@com','1234','013333','B+',29);
+
+insert into Employees values(3,'Iqbal','abcl@com','1234','013333','A+',25);
+
+insert into Employees values(4,'Zihad','abcm@com','1234','013333','AB+',33);
+
+insert into Electric_Bill values(1,'W','Commercial',900);
+
+insert into Electric_Bill values(2,'X','Domestic',1300);
+
+insert into Electric_Bill values(3,'Y','Domestic',560);
+
+insert into Electric_Bill values(4,'Z','Commercial',880);
+
+insert into Consumer values(1,'K','0172',1,'Dhaka');
+
+insert into Consumer values(2,'L','0173',2,'Dhaka');
+
+insert into Consumer values(3,'M','0174',3,'Dhaka');
+
+insert into Consumer values(4,'N','0175',4,'Dhaka');
+

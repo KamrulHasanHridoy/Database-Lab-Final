@@ -1,0 +1,36 @@
+create table Admin(  
+    Admin_id integer not null,  
+    name varchar(20) not null,  
+    email varchar(30) not null,  
+    password varchar(10) not null,  
+    primary key(Admin_id)  
+    );
+
+create table Employees(  
+    Employee_id integer not null,  
+    name varchar(20) not null,  
+    email varchar(30) not null,  
+    password varchar(10) not null,  
+    mobile varchar(10) not null,  
+    blood_group varchar(3) not null,  
+    age numeric(2) not null, 
+    primary key(Employee_id)  
+    );
+
+create table Electric_Bill(  
+    Bill_id integer not null,  
+    name varchar(20) not null,  
+    Type varchar(20) not null, 
+    Amount numeric(6) not null, 
+    primary key(bill_id)  
+    );
+
+create table Consumer(  
+    Consumer_id integer not null,  
+    name varchar(20) not null, 
+    mobile varchar(11) not null,  
+    Bill_id integer not null, 
+    Address varchar(20) not null, 
+    primary key(Consumer_id), 
+    foreign key(Bill_id) references Electric_bill(Bill_id) 
+    );
